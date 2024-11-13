@@ -7,7 +7,7 @@ This is a web application built with the TypeScript(Angular) for managing employ
 - Angular CLI (v10 or later)
 
 ## Installation
-- Clone the repository: git clone git@github.com:PoojaJangle294/Employee_Dashboard.git
+- Clone the repository: git clone https://github.com/PoojaJangle294/Employee_Dashboard.git
 - Navigate to the project directory
 - Install dependencies: npm install
 - Start the JSON server: json-server --watch db.json
