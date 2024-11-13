@@ -1,0 +1,37 @@
+
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+    <!-- Form controls for name, email, department, and joining date -->
+    <div class="form-container">
+        <h2 class="add-new-head">Add New Employee</h2>
+    <mat-form-field appearance="outline">
+        <mat-label>Employee Name</mat-label>
+        <input matInput id="name" formControlName="name">
+        <mat-error *ngIf="employeeForm.get('name')?.invalid">Name is required</mat-error>
+      </mat-form-field>
+    
+      <mat-form-field appearance="outline">
+        <mat-label>Employee Email</mat-label>
+        <input matInput id="email" formControlName="email">
+        <mat-error *ngIf="employeeForm.get('email')?.invalid">Valid email is required</mat-error>
+      </mat-form-field>
+    
+      <mat-form-field appearance="outline">
+        <mat-label>Employee Department</mat-label>
+        <mat-select formControlName="department">
+          <mat-option *ngFor="let dept of departments" [value]="dept">{{ dept }}</mat-option>
+        </mat-select>
+        <mat-error *ngIf="employeeForm.get('department')?.invalid">Department is required</mat-error>
+      </mat-form-field>
+    
+      <mat-form-field appearance="outline">
+        <mat-label>Joining Date</mat-label>
+        <input matInput [matDatepicker]="picker" id="joiningDate" formControlName="joiningDate">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <mat-error *ngIf="employeeForm.get('joiningDate')?.invalid">Joining date is required</mat-error>
+      </mat-form-field>
+    
+      <button mat-raised-button color="primary" type="submit" [disabled]="employeeForm.invalid">Add Employee</button>
+      </div>
+  </form>
+  

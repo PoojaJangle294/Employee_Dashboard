@@ -1,0 +1,13 @@
+.successpopup{
+    text-align: center;
+}
+
+.success-icon{
+    width: 20%;
+    height: 70px;
+}
+
+.success-button{
+    background-color: #4CAF50;
+    margin-left: 42%;
+}

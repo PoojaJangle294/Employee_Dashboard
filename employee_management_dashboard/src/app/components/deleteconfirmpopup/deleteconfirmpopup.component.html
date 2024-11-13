@@ -1,0 +1,8 @@
+<h2 mat-dialog-title>Delete Confirmation</h2>
+<h4 mat-dialog-title class="delete-msg">Are you sure?</h4>
+<mat-dialog-content class="delete-content">Do you really want to delete this record?</mat-dialog-content>
+<mat-dialog-actions class="deletepopup-button">
+  <button mat-button mat-dialog-close (click)="cancel()">Cancel</button>
+  <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+  <button mat-button [mat-dialog-close]="true" (click)="deleteEmployee()">Delete</button>
+</mat-dialog-actions>

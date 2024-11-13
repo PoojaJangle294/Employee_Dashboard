@@ -1,0 +1,18 @@
+{
+  "employees": [
+    {
+      "id": "07a5",
+      "name": "Pooja",
+      "email": "pooja@gmail.com",
+      "department": "operation",
+      "joiningDate": "07/2/2022"
+    },
+    {
+      "id": "0b7d",
+      "name": "Test",
+      "email": "test@gmail.com",
+      "department": "Sales",
+      "joiningDate": "2024-11-14"
+    }
+  ]
+}
